@@ -14,9 +14,6 @@ Currently, the plugin only supports picking phone numbers. However, it should be
 ### Example
 
 ``` dart
-import 'package:flutter/material.dart';
-import 'package:flutter_contact_picker/flutter_contact_picker.dart';
-
 void main() {
   runApp(MyApp());
 }
