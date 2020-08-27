@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="598c474d-43b0-4de2-b592-41d2754d222c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_29" />
+  <component name="ProjectId" id="1gdUxQOAsmEYrSpOPgHFEukFAJE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="598c474d-43b0-4de2-b592-41d2754d222c" name="Default Changelist" comment="" />
+      <created>1598444208160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598444208160</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="467" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598447393179">
+      <screen x="0" y="23" width="1600" height="797" />
+    </state>
+    <state x="467" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1600.797@0.23.1600.797" timestamp="1598447393179" />
+    <state width="864" height="292" key="GridCell.Tab.0.bottom" timestamp="1598521897332">
+      <screen x="0" y="23" width="1600" height="796" />
+    </state>
+    <state width="864" height="292" key="GridCell.Tab.0.bottom/0.23.1600.796@0.23.1600.796" timestamp="1598521897332" />
+    <state width="1012" height="292" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1598519645257" />
+    <state width="864" height="292" key="GridCell.Tab.0.center" timestamp="1598521897331">
+      <screen x="0" y="23" width="1600" height="796" />
+    </state>
+    <state width="864" height="292" key="GridCell.Tab.0.center/0.23.1600.796@0.23.1600.796" timestamp="1598521897331" />
+    <state width="1012" height="292" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1598519645256" />
+    <state width="864" height="292" key="GridCell.Tab.0.left" timestamp="1598521897331">
+      <screen x="0" y="23" width="1600" height="796" />
+    </state>
+    <state width="864" height="292" key="GridCell.Tab.0.left/0.23.1600.796@0.23.1600.796" timestamp="1598521897331" />
+    <state width="1012" height="292" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1598519645256" />
+    <state width="864" height="292" key="GridCell.Tab.0.right" timestamp="1598521897332">
+      <screen x="0" y="23" width="1600" height="796" />
+    </state>
+    <state width="864" height="292" key="GridCell.Tab.0.right/0.23.1600.796@0.23.1600.796" timestamp="1598521897332" />
+    <state width="1012" height="292" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1598519645257" />
+    <state x="290" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1598520282056">
+      <screen x="0" y="23" width="1600" height="796" />
+    </state>
+    <state x="290" y="254" key="com.intellij.ide.util.TipDialog/0.23.1600.796@0.23.1600.796" timestamp="1598520282056" />
+  </component>
+</project>
