@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_contact_picker/flutter_native_contact_picker.dart';
+import '../../lib/flutter_native_contact_picker.dart';
 
 void main() {
   runApp(MyApp());

@@ -6,13 +6,13 @@ description: Demonstrates how to use the flutter_contact_picker plugin.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  flutter_contact_picker:
+  flutter_native_contact_picker:
     # When depending on this package from a real application you should use:
     #   flutter_contact_picker: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

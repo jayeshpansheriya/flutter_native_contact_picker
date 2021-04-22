@@ -7,8 +7,8 @@ class FlutterContactPicker {
       const MethodChannel('flutter_contact_picker');
 
   /// Method to call native code and get contact detail
-  Future<Contact> selectContact() async {
-    final Map<dynamic, dynamic> result =
+  Future<Contact?> selectContact() async {
+    final Map<dynamic, dynamic>? result =
         await _channel.invokeMethod('selectContact');
     if (result == null) {
       return null;
@@ -23,14 +23,15 @@ class Contact {
 
   factory Contact.fromMap(Map<dynamic, dynamic> map) => new Contact(
       fullName: map['fullName'],
-     // phoneNumber: new PhoneNumber.fromMap(map['phoneNumber']));
-  phoneNumbers: map['phoneNumbers'].cast<String>());
+      // phoneNumber: new PhoneNumber.fromMap(map['phoneNumber']));
+      phoneNumbers: map['phoneNumbers'].cast<String>());
+
   /// The full name of the contact, e.g. "Jayesh Pansheriya".
-  final String fullName;
+  final String? fullName;
 
   /// The phone number of the contact.
- // final PhoneNumber phoneNumber;
-  final List<String> phoneNumbers;
+  // final PhoneNumber phoneNumber;
+  final List<String>? phoneNumbers;
 
   @override
   String toString() => '$fullName: $phoneNumbers';
@@ -44,10 +45,10 @@ class PhoneNumber {
       new PhoneNumber(number: map['number'], label: map['label']);
 
   /// The formatted phone number, e.g. "+1 (555) 555-5555"
-  final String number;
+  final String? number;
 
   /// The label associated with the phone number, e.g. "home" or "work".
-  final String label;
+  final String? label;
 
   @override
   String toString() => '$number ($label)';
