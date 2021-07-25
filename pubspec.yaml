@@ -28,8 +28,8 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.jayesh.flutter_native_contact_picker
-        pluginClass: FlutterNativeContactPickerPlugin
+        package: com.jayesh.flutter_contact_picker
+        pluginClass: FlutterContactPickerPlugin
       ios:
         pluginClass: FlutterNativeContactPickerPlugin
 
