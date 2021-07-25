@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../lib/flutter_native_contact_picker.dart';
+import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final FlutterContactPicker _contactPicker = new FlutterContactPicker();
-  Contact _contact;
+  Contact? _contact;
 
   @override
   void initState() {
@@ -34,7 +35,7 @@ class _MyAppState extends State<MyApp> {
                 color: Colors.blue,
                 child: new Text("CLICK ME"),
                 onPressed: () async {
-                  Contact contact = await _contactPicker.selectContact();
+                  Contact? contact = await _contactPicker.selectContact();
                   setState(() {
                     _contact = contact;
                   });

@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 class FlutterContactPicker {
   static const MethodChannel _channel =
-      const MethodChannel('flutter_contact_picker');
+      const MethodChannel('flutter_native_contact_picker');
 
   /// Method to call native code and get contact detail
   Future<Contact?> selectContact() async {

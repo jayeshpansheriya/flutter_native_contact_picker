@@ -1,26 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="598c474d-43b0-4de2-b592-41d2754d222c" name="Default Changelist" comment="" />
+    <list default="true" id="598c474d-43b0-4de2-b592-41d2754d222c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flutter_native_contact_picker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/jayesh/flutter_contact_picker/FlutterContactPickerPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_contact_picker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_contact_picker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterContactPickerPlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterContactPickerPlugin.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterContactPickerPlugin.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/flutter_contact_picker.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_native_contact_picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_native_contact_picker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_contact_picker_test.dart" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/Users/indianic/.android/avd/Pixel_XL_API_29.avd]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gdUxQOAsmEYrSpOPgHFEukFAJE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -35,33 +104,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="467" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598447393179">
-      <screen x="0" y="23" width="1600" height="797" />
+    <state width="1181" height="293" key="GridCell.Tab.0.bottom" timestamp="1627196623508">
+      <screen x="0" y="23" width="1600" height="794" />
     </state>
-    <state x="467" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1600.797@0.23.1600.797" timestamp="1598447393179" />
-    <state width="864" height="292" key="GridCell.Tab.0.bottom" timestamp="1598521897332">
-      <screen x="0" y="23" width="1600" height="796" />
+    <state width="1558" height="163" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1627196159480" />
+    <state width="1181" height="373" key="GridCell.Tab.0.bottom/0.23.1600.791@0.23.1600.791" timestamp="1627195215446" />
+    <state width="1181" height="293" key="GridCell.Tab.0.bottom/0.23.1600.794@0.23.1600.794" timestamp="1627196623508" />
+    <state width="1181" height="373" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1627195447926" />
+    <state width="1181" height="293" key="GridCell.Tab.0.center" timestamp="1627196623508">
+      <screen x="0" y="23" width="1600" height="794" />
     </state>
-    <state width="864" height="292" key="GridCell.Tab.0.bottom/0.23.1600.796@0.23.1600.796" timestamp="1598521897332" />
-    <state width="1012" height="292" key="GridCell.Tab.0.bottom/0.23.1600.797@0.23.1600.797" timestamp="1598519645257" />
-    <state width="864" height="292" key="GridCell.Tab.0.center" timestamp="1598521897331">
-      <screen x="0" y="23" width="1600" height="796" />
+    <state width="1558" height="163" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1627196159479" />
+    <state width="1181" height="373" key="GridCell.Tab.0.center/0.23.1600.791@0.23.1600.791" timestamp="1627195215445" />
+    <state width="1181" height="293" key="GridCell.Tab.0.center/0.23.1600.794@0.23.1600.794" timestamp="1627196623508" />
+    <state width="1181" height="373" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1627195447926" />
+    <state width="1181" height="293" key="GridCell.Tab.0.left" timestamp="1627196623507">
+      <screen x="0" y="23" width="1600" height="794" />
     </state>
-    <state width="864" height="292" key="GridCell.Tab.0.center/0.23.1600.796@0.23.1600.796" timestamp="1598521897331" />
-    <state width="1012" height="292" key="GridCell.Tab.0.center/0.23.1600.797@0.23.1600.797" timestamp="1598519645256" />
-    <state width="864" height="292" key="GridCell.Tab.0.left" timestamp="1598521897331">
-      <screen x="0" y="23" width="1600" height="796" />
+    <state width="1558" height="163" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1627196159478" />
+    <state width="1181" height="373" key="GridCell.Tab.0.left/0.23.1600.791@0.23.1600.791" timestamp="1627195215445" />
+    <state width="1181" height="293" key="GridCell.Tab.0.left/0.23.1600.794@0.23.1600.794" timestamp="1627196623507" />
+    <state width="1181" height="373" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1627195447925" />
+    <state width="1181" height="293" key="GridCell.Tab.0.right" timestamp="1627196623508">
+      <screen x="0" y="23" width="1600" height="794" />
     </state>
-    <state width="864" height="292" key="GridCell.Tab.0.left/0.23.1600.796@0.23.1600.796" timestamp="1598521897331" />
-    <state width="1012" height="292" key="GridCell.Tab.0.left/0.23.1600.797@0.23.1600.797" timestamp="1598519645256" />
-    <state width="864" height="292" key="GridCell.Tab.0.right" timestamp="1598521897332">
-      <screen x="0" y="23" width="1600" height="796" />
-    </state>
-    <state width="864" height="292" key="GridCell.Tab.0.right/0.23.1600.796@0.23.1600.796" timestamp="1598521897332" />
-    <state width="1012" height="292" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1598519645257" />
-    <state x="290" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1598520282056">
-      <screen x="0" y="23" width="1600" height="796" />
-    </state>
-    <state x="290" y="254" key="com.intellij.ide.util.TipDialog/0.23.1600.796@0.23.1600.796" timestamp="1598520282056" />
+    <state width="1558" height="163" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1627196159479" />
+    <state width="1181" height="373" key="GridCell.Tab.0.right/0.23.1600.791@0.23.1600.791" timestamp="1627195215446" />
+    <state width="1181" height="293" key="GridCell.Tab.0.right/0.23.1600.794@0.23.1600.794" timestamp="1627196623508" />
+    <state width="1181" height="373" key="GridCell.Tab.0.right/0.23.1600.797@0.23.1600.797" timestamp="1627195447926" />
   </component>
 </project>

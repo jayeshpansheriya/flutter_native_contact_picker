@@ -2,7 +2,7 @@ name: flutter_native_contact_picker
 description: A Flutter plugin for picking a contact from the address book.
 version: 0.0.2
 #author: Jayesh Pansheriya <pansheriyajayesh@gmail.com>
-homepage: https://github.com/jayeshpansheriya/flutter_contact_picker
+homepage: https://github.com/jayeshpansheriya/flutter_native_contact_picker
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -28,10 +28,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.jayesh.flutter_contact_picker
-        pluginClass: FlutterContactPickerPlugin
+        package: com.jayesh.flutter_native_contact_picker
+        pluginClass: FlutterNativeContactPickerPlugin
       ios:
-        pluginClass: FlutterContactPickerPlugin
+        pluginClass: FlutterNativeContactPickerPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
