@@ -1,7 +1,9 @@
+## 0.0.3
+* update example.
+* solve ios related issues.
 
 ## 0.0.2
+* null safty.
 
-* TODO: null safty.
 ## 0.0.1
-
-* TODO: Describe initial release.
+* Describe initial release.
