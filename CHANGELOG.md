@@ -1,3 +1,6 @@
+## 0.0.4
+* update kotlin version
+
 ## 0.0.3
 * update example.
 * solve ios related issues.
