@@ -26,7 +26,7 @@ var _result: FlutterResult?;
               contactPicker.delegate = self
               contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
 
-              let viewController = UIApplication.shared.windows.first?.rootViewController
+              let viewController = UIApplication.shared.keyWindow?.rootViewController
               viewController?.present(contactPicker, animated: true, completion: nil)
           }
       }
