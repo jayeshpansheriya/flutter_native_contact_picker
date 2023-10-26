@@ -25,8 +25,19 @@ var _result: FlutterResult?;
               let contactPicker = CNContactPickerViewController()
               contactPicker.delegate = self
               contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
-
-              let viewController = UIApplication.shared.keyWindow?.rootViewController
+              
+              // find proper keyWindow
+              var keyWindow: UIWindow? = nil
+              if #available(iOS 13, *) {
+                  keyWindow = UIApplication.shared.connectedScenes.filter {
+                      $0.activationState == .foregroundActive
+                  }.compactMap { $0 as? UIWindowScene
+                  }.first?.windows.filter({ $0.isKeyWindow}).first
+              } else {
+                  keyWindow = UIApplication.shared.keyWindow
+              }
+              
+              let viewController = keyWindow?.rootViewController
               viewController?.present(contactPicker, animated: true, completion: nil)
           }
       }
