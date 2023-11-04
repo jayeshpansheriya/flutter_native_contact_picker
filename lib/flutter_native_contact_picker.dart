@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/services.dart';
 
@@ -14,6 +15,12 @@ class FlutterContactPicker {
       return null;
     }
     return new Contact.fromMap(result);
+  }
+
+  Future<List<Contact>?> selectContacts() async {
+    if (!Platform.isIOS) throw UnimplementedError();
+    final List<dynamic>? result = await _channel.invokeMethod('selectContacts');
+    return result?.map((e) => Contact.fromMap(e)).toList();
   }
 }
 

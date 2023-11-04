@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -13,7 +12,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final FlutterContactPicker _contactPicker = new FlutterContactPicker();
-  Contact? _contact;
+  List<Contact>? _contacts;
 
   @override
   void initState() {
@@ -33,17 +32,28 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               new MaterialButton(
                 color: Colors.blue,
-                child: new Text("CLICK ME"),
+                child: new Text("Single"),
                 onPressed: () async {
                   Contact? contact = await _contactPicker.selectContact();
                   setState(() {
-                    _contact = contact;
+                    _contacts = contact == null ? null : [contact];
                   });
                 },
               ),
-              new Text(
-                _contact == null ? 'No contact selected.' : _contact.toString(),
+              new MaterialButton(
+                color: Colors.blue,
+                child: new Text("Multiple"),
+                onPressed: () async {
+                  final contacts = await _contactPicker.selectContacts();
+                  setState(() {
+                    _contacts = contacts;
+                  });
+                },
               ),
+              if (_contacts != null)
+                ..._contacts!.map(
+                  (e) => Text(e.toString()),
+                )
             ],
           ),
         ),
