@@ -1,6 +1,6 @@
 # flutter_contact_picker
 
-With this plugin a Flutter app can ask its user to select a contact from his/her address book. The information associated with the contact is returned to the app.
+With this plugin a Flutter app can ask its user to select a contact or contacts from his/her address book. The information associated with the contacts is returned to the app.
 
 This plugin uses the operating system's native UI for selecting contacts and does not require any special permissions from the user.
 
@@ -8,12 +8,17 @@ Currently, the plugin only supports picking phone numbers. However, it should be
 
 ## Features
 
-- [X] iOS Support
-- [X] Android Support
+- [x] iOS Support
+
+  - Select single contact
+  - Select multiple contacts
+
+- [x] Android Support
+  - Select single contact
 
 ### Example
 
-``` dart
+```dart
 void main() {
   runApp(MyApp());
 }
@@ -25,7 +30,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final FlutterContactPicker _contactPicker = new FlutterContactPicker();
-  Contact _contact;
+  List<Contact>? _contacts;
 
   @override
   void initState() {
@@ -45,17 +50,28 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               new MaterialButton(
                 color: Colors.blue,
-                child: new Text("CLICK ME"),
+                child: new Text("Single"),
                 onPressed: () async {
-                  Contact contact = await _contactPicker.selectContact();
+                  Contact? contact = await _contactPicker.selectContact();
                   setState(() {
-                    _contact = contact;
+                    _contacts = contact == null ? null : [contact];
                   });
                 },
               ),
-              new Text(
-                _contact == null ? 'No contact selected.' : _contact.toString(),
+              new MaterialButton(
+                color: Colors.blue,
+                child: new Text("Multiple"),
+                onPressed: () async {
+                  final contacts = await _contactPicker.selectContacts();
+                  setState(() {
+                    _contacts = contacts;
+                  });
+                },
               ),
+              if (_contacts != null)
+                ..._contacts!.map(
+                  (e) => Text(e.toString()),
+                )
             ],
           ),
         ),
@@ -63,4 +79,5 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
 ```
