@@ -1,3 +1,6 @@
+## 0.0.6
+* Select multiple contacts in ios Thanks [@BradenBagby](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/10)
+
 ## 0.0.5
 * Fix ios issue
 
