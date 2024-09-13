@@ -1,3 +1,4 @@
+import 'package:flutter_native_contact_picker/model/contact.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'flutter_native_contact_picker_method_channel.dart';
@@ -23,7 +24,11 @@ abstract class FlutterNativeContactPickerPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
+  Future<Contact?> selectContact() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<List<Contact>?> selectContacts() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

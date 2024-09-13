@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec647dff-ef89-4a94-8782-3415c1d2db6f" name="Changes" comment="" />
+    <list default="true" id="ec647dff-ef89-4a94-8782-3415c1d2db6f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/model/contact.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/jayesh/flutter_native_contact_picker/FlutterNativeContactPickerPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/jayesh/flutter_native_contact_picker/FlutterNativeContactPickerPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/integration_test/plugin_integration_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/integration_test/plugin_integration_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_native_contact_picker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_native_contact_picker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_native_contact_picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_native_contact_picker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_native_contact_picker_method_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_native_contact_picker_method_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_native_contact_picker_platform_interface.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_native_contact_picker_platform_interface.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_native_contact_picker_method_channel_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_native_contact_picker_method_channel_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_native_contact_picker_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_native_contact_picker_test.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +29,15 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2m09cFLYRc00xLzhfyjBefMi7jS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,8 +54,10 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "develop",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/indianic/Desktop/flutter_native_contact_picker",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
     "show.migrate.to.gradle.popup": "false"
   }
