@@ -1,61 +1,61 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+
+import 'package:flutter/services.dart';
 import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  final FlutterContactPicker _contactPicker = new FlutterContactPicker();
-  List<Contact>? _contacts;
+  String _platformVersion = 'Unknown';
+  final _flutterNativeContactPickerPlugin = FlutterNativeContactPicker();
 
   @override
   void initState() {
     super.initState();
+    initPlatformState();
+  }
+
+  // Platform messages are asynchronous, so we initialize in an async method.
+  Future<void> initPlatformState() async {
+    String platformVersion;
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    // We also handle the message potentially returning null.
+    try {
+      platformVersion =
+          await _flutterNativeContactPickerPlugin.getPlatformVersion() ?? 'Unknown platform version';
+    } on PlatformException {
+      platformVersion = 'Failed to get platform version.';
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+
+    setState(() {
+      _platformVersion = platformVersion;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Contact Picker Example App'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
         ),
-        body: new Center(
-          child: new Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              new MaterialButton(
-                color: Colors.blue,
-                child: new Text("Single"),
-                onPressed: () async {
-                  Contact? contact = await _contactPicker.selectContact();
-                  setState(() {
-                    _contacts = contact == null ? null : [contact];
-                  });
-                },
-              ),
-              new MaterialButton(
-                color: Colors.blue,
-                child: new Text("Multiple"),
-                onPressed: () async {
-                  final contacts = await _contactPicker.selectContacts();
-                  setState(() {
-                    _contacts = contacts;
-                  });
-                },
-              ),
-              if (_contacts != null)
-                ..._contacts!.map(
-                  (e) => Text(e.toString()),
-                )
-            ],
-          ),
+        body: Center(
+          child: Text('Running on: $_platformVersion\n'),
         ),
       ),
     );
