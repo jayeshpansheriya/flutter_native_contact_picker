@@ -15,7 +15,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final FlutterNativeContactPicker _contactPicker = FlutterNativeContactPicker();
+  final FlutterNativeContactPicker _contactPicker =
+      FlutterNativeContactPicker();
   List<Contact>? _contacts;
 
   @override
@@ -48,15 +49,15 @@ class _MyAppState extends State<MyApp> {
                 color: Colors.blue,
                 child: const Text("Multiple"),
                 onPressed: () async {
-                  // final contacts = await _contactPicker.selectContacts();
-                  // setState(() {
-                  //   _contacts = contacts;
-                  // });
+                  final contacts = await _contactPicker.selectContacts();
+                  setState(() {
+                    _contacts = contacts;
+                  });
                 },
               ),
               if (_contacts != null)
                 ..._contacts!.map(
-                      (e) => Text(e.toString()),
+                  (e) => Text(e.toString()),
                 )
             ],
           ),

@@ -2,7 +2,7 @@
 class Contact {
   Contact({this.fullName, this.phoneNumbers});
 
-  factory Contact.fromMap(Map<dynamic, dynamic> map) => new Contact(
+  factory Contact.fromMap(Map<dynamic, dynamic> map) => Contact(
       fullName: map['fullName'],
       // phoneNumber: new PhoneNumber.fromMap(map['phoneNumber']));
       phoneNumbers: map['phoneNumbers'].cast<String>());

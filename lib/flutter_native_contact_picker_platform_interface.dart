@@ -9,7 +9,8 @@ abstract class FlutterNativeContactPickerPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static FlutterNativeContactPickerPlatform _instance = MethodChannelFlutterNativeContactPicker();
+  static FlutterNativeContactPickerPlatform _instance =
+      MethodChannelFlutterNativeContactPicker();
 
   /// The default instance of [FlutterNativeContactPickerPlatform] to use.
   ///
@@ -25,10 +26,10 @@ abstract class FlutterNativeContactPickerPlatform extends PlatformInterface {
   }
 
   Future<Contact?> selectContact() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+    throw UnimplementedError('selectContact() has not been implemented.');
   }
 
   Future<List<Contact>?> selectContacts() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+    throw UnimplementedError('selectContacts() has not been implemented.');
   }
 }
