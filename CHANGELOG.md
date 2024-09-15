@@ -1,5 +1,5 @@
-## 0.0.8-prerelease
-* Working on package update, Android development done
+## 0.0.8-prerelease.1
+* Working on package update, update android and ios native code.
 
 ## 0.0.7
 * Incremented Gradle Version, Thanks [@YarosMallorca](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/14)
