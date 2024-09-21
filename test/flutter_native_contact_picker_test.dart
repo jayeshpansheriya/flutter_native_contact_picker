@@ -1,23 +1,33 @@
-import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
+// import 'package:flutter_native_contact_picker/flutter_native_contact_picker.dart';
+import 'package:flutter_native_contact_picker/flutter_native_contact_picker_platform_interface.dart';
+import 'package:flutter_native_contact_picker/flutter_native_contact_picker_method_channel.dart';
+// import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+
+// class MockFlutterNativeContactPickerPlatform
+//     with MockPlatformInterfaceMixin
+//     implements FlutterNativeContactPickerPlatform {
+
+//   @override
+//   Future<String?> getPlatformVersion() => Future.value('42');
+// }
 
 void main() {
-  const MethodChannel channel = MethodChannel('flutter_native_contact_picker');
+  final FlutterNativeContactPickerPlatform initialPlatform =
+      FlutterNativeContactPickerPlatform.instance;
 
-  TestWidgetsFlutterBinding.ensureInitialized();
-
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
+  test('$MethodChannelFlutterNativeContactPicker is the default instance', () {
+    expect(initialPlatform,
+        isInstanceOf<MethodChannelFlutterNativeContactPicker>());
   });
 
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
+  // test('getPlatformVersion', () async {
+  //   FlutterNativeContactPicker flutterNativeContactPickerPlugin =
+  //       FlutterNativeContactPicker();
+  //   MockFlutterNativeContactPickerPlatform fakePlatform =
+  //       MockFlutterNativeContactPickerPlatform();
+  //   FlutterNativeContactPickerPlatform.instance = fakePlatform;
 
-  test('getPlatformVersion', () async {
-    expect(await FlutterNativeContactPicker.platformVersion, '42');
-  });
+  //   // expect(await flutterNativeContactPickerPlugin.getPlatformVersion(), '42');
+  // });
 }

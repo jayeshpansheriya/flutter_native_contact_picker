@@ -1,4 +1,4 @@
-package com.jayesh.flutter_contact_picker
+package com.jayesh.flutter_native_contact_picker
 
 import androidx.annotation.NonNull;
 
@@ -17,8 +17,8 @@ import io.flutter.plugin.common.PluginRegistry
 import java.util.*
 
 /** FlutterContactPickerPlugin */
-public class FlutterContactPickerPlugin: FlutterPlugin, MethodCallHandler,
-        ActivityAware, PluginRegistry.ActivityResultListener{
+public class FlutterNativeContactPickerPlugin: FlutterPlugin, MethodCallHandler,
+  ActivityAware, PluginRegistry.ActivityResultListener{
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -98,14 +98,14 @@ public class FlutterContactPickerPlugin: FlutterPlugin, MethodCallHandler,
       val cursor = activity!!.contentResolver.query(contactUri, null, null, null, null)
       cursor?.use {
         it.moveToFirst()
-       // val phoneType = it.getInt(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.TYPE))
-       // val customLabel = it.getString(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.LABEL))
-       // val label = ContactsContract.CommonDataKinds.Email.getTypeLabel(activity!!.resources, phoneType, customLabel) as String
+        // val phoneType = it.getInt(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.TYPE))
+        // val customLabel = it.getString(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.LABEL))
+        // val label = ContactsContract.CommonDataKinds.Email.getTypeLabel(activity!!.resources, phoneType, customLabel) as String
         val number = it.getString(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER))
         val fullName = it.getString(it.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME))
-       // val phoneNumber = HashMap<String, Any>()
-       // phoneNumber.put("number", number)
-       // phoneNumber.put("label", label)
+        // val phoneNumber = HashMap<String, Any>()
+        // phoneNumber.put("number", number)
+        // phoneNumber.put("label", label)
         val contact = HashMap<String, Any>()
         contact.put("fullName", fullName)
         contact.put("phoneNumbers", listOf(number))

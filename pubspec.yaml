@@ -1,35 +1,43 @@
 name: flutter_native_contact_picker
-description: A Flutter plugin for picking a contact from the address book.
-version: 0.0.6
+description: "A Flutter plugin for picking a contact from the address book."
+version: 0.0.8-prerelease.1
 #author: Jayesh Pansheriya <pansheriyajayesh@gmail.com>
 homepage: https://github.com/jayeshpansheriya/flutter_native_contact_picker
 
 environment:
-  sdk: ">=2.12.0 <4.0.0"
-  flutter: ">=1.20.0"
+  sdk: ^3.5.3
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter.
+# The following section is specific to Flutter packages.
 flutter:
   # This section identifies this Flutter project as a plugin project.
-  # The 'pluginClass' and Android 'package' identifiers should not ordinarily
-  # be modified. They are used by the tooling to maintain consistency when
+  # The 'pluginClass' specifies the class (in Java, Kotlin, Swift, Objective-C, etc.)
+  # which should be registered in the plugin registry. This is required for
+  # using method channels.
+  # The Android 'package' specifies package in which the registered class is.
+  # This is required for using method channels on Android.
+  # The 'ffiPlugin' specifies that native code should be built and bundled.
+  # This is required for using `dart:ffi`.
+  # All these are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
     platforms:
       android:
-        package: com.jayesh.flutter_contact_picker
-        pluginClass: FlutterContactPickerPlugin
+        package: com.jayesh.flutter_native_contact_picker
+        pluginClass: FlutterNativeContactPickerPlugin
       ios:
         pluginClass: FlutterNativeContactPickerPlugin
 
@@ -39,10 +47,10 @@ flutter:
   #   - images/a_dot_ham.jpeg
   #
   # For details regarding assets in packages, see
-  # https://flutter.dev/assets-and-images/#from-packages
+  # https://flutter.dev/to/asset-from-package
   #
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # https://flutter.dev/to/resolution-aware-images
 
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
@@ -62,4 +70,4 @@ flutter:
   #         weight: 700
   #
   # For details regarding fonts in packages, see
-  # https://flutter.dev/custom-fonts/#from-packages
+  # https://flutter.dev/to/font-from-package

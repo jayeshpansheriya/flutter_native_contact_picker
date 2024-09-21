@@ -1,3 +1,9 @@
+## 0.0.8-prerelease.1
+* Working on package update, update android and ios native code.
+
+## 0.0.7
+* Incremented Gradle Version, Thanks [@YarosMallorca](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/14)
+
 ## 0.0.6
 * Select multiple contacts in ios, Thanks [@BradenBagby](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/10)
 
