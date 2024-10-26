@@ -1,4 +1,3 @@
-
 import 'package:flutter_native_contact_picker/model/contact.dart';
 
 import 'flutter_native_contact_picker_platform_interface.dart';

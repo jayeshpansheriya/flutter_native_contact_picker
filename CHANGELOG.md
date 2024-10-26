@@ -1,4 +1,7 @@
 ## 0.0.8
+* Update Readme file.
+
+## 0.0.8
 * Update Plugin with flutter latest version (Flutter 3.24.3)
 
 ## 0.0.7
