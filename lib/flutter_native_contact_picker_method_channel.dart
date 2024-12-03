@@ -34,4 +34,14 @@ class MethodChannelFlutterNativeContactPicker
     }
     return result.map((e) => Contact.fromMap(e)).toList();
   }
+
+  @override
+  Future<Contact?> selectPhoneNumber() async {
+    final Map<dynamic, dynamic>? result = await methodChannel
+        .invokeMethod<Map<dynamic, dynamic>?>('selectPhoneNumber');
+    if (result == null) {
+      return null;
+    }
+    return Contact.fromMap(result);
+  }
 }
