@@ -1,4 +1,8 @@
-## 0.0.8
+## 0.0.10
+* Update Readme file.
+* Add phone number selection mode, Thanks [@daniil-shumko](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/23)
+
+## 0.0.9
 * Update Readme file.
 
 ## 0.0.8
