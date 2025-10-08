@@ -1,6 +1,6 @@
 name: flutter_native_contact_picker
 description: "A Flutter plugin for picking a contact from the address book."
-version: 0.0.10
+version: 0.0.11
 #author: Jayesh Pansheriya <pansheriyajayesh@gmail.com>
 homepage: https://github.com/jayeshpansheriya/flutter_native_contact_picker
 
@@ -16,7 +16,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
