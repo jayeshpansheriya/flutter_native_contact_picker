@@ -1,3 +1,8 @@
+## 0.0.11
+* Update Android Gradle plugin to 8.13.0
+* Update Kotlin version to 1.8.22
+* Android build: compileSdkVersion 36, minSdk 21
+
 ## 0.0.10
 * Update Readme file.
 * Add phone number selection mode, Thanks [@daniil-shumko](https://github.com/jayeshpansheriya/flutter_native_contact_picker/pull/23)
