@@ -27,8 +27,8 @@ class MethodChannelFlutterNativeContactPicker
   Future<List<Contact>?> selectContacts() async {
     if (!Platform.isIOS) throw UnimplementedError();
 
-    final List<dynamic>? result =
-        await methodChannel.invokeMethod<List<dynamic>?>('selectContacts');
+    final List<dynamic>? result = await methodChannel
+        .invokeMethod<List<dynamic>?>('selectContacts');
     if (result == null) {
       return null;
     }
