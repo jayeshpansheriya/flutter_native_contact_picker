@@ -1,4 +1,4 @@
-## 0.0.12
+## 0.0.12-prerelease
 * Add Swift Package Manager support for iOS (alongside CocoaPods), per [Flutter SPM plugin guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-plugin-authors).
 * Raise minimum Flutter to 3.41.0 and Dart SDK to ^3.11.0 for `FlutterFramework` SPM integration.
 * Raise minimum iOS to 13.0 (required by Flutter’s SPM `FlutterFramework`; aligns with migrated example projects).
