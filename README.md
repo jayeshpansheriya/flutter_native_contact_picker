@@ -64,6 +64,7 @@ class Contact {
 
 ### iOS
 
+- Minimum iOS **13.0** (Swift Package Manager integration and Flutter `FlutterFramework` requirement)
 - Supports selecting multiple contacts
 - Returns all phone numbers associated with a contact
 - When using `selectPhoneNumber()`, returns both the selected number and all available numbers
