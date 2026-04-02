@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_native_contact_picker'
-  s.version          = '0.0.12'
+  s.version          = '0.0.12-prerelease'
   s.summary          = 'A Flutter plugin for picking a contact from the address book.'
   s.description      = <<-DESC
 A Flutter plugin for picking a contact from the address book.
