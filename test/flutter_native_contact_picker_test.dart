@@ -17,8 +17,10 @@ void main() {
       FlutterNativeContactPickerPlatform.instance;
 
   test('$MethodChannelFlutterNativeContactPicker is the default instance', () {
-    expect(initialPlatform,
-        isInstanceOf<MethodChannelFlutterNativeContactPicker>());
+    expect(
+      initialPlatform,
+      isInstanceOf<MethodChannelFlutterNativeContactPicker>(),
+    );
   });
 
   // test('getPlatformVersion', () async {

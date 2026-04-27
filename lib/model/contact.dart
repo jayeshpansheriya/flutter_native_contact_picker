@@ -1,16 +1,12 @@
 /// Represents a contact selected by the user.
 class Contact {
-  Contact({
-    this.fullName,
-    this.phoneNumbers,
-    this.selectedPhoneNumber,
-  });
+  Contact({this.fullName, this.phoneNumbers, this.selectedPhoneNumber});
 
   factory Contact.fromMap(Map<dynamic, dynamic> map) => Contact(
-        fullName: map['fullName'],
-        phoneNumbers: map['phoneNumbers']?.cast<String>(),
-        selectedPhoneNumber: map['selectedPhoneNumber']?.toString(),
-      );
+    fullName: map['fullName'],
+    phoneNumbers: map['phoneNumbers']?.cast<String>(),
+    selectedPhoneNumber: map['selectedPhoneNumber']?.toString(),
+  );
 
   /// The full name of the contact, e.g. "Jayesh Pansheriya".
   final String? fullName;

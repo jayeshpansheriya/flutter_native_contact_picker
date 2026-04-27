@@ -27,6 +27,8 @@ migrate_working_dir/
 **/doc/api/
 .dart_tool/
 build/
+.build/
+.swiftpm/
 
 # FVM Version Cache
 .fvm/
