@@ -1,3 +1,9 @@
+## 0.0.13
+* Fix Android builds on AGP 9+ by removing the standalone `kotlin-android` plugin ([#37](https://github.com/jayeshpansheriya/flutter_native_contact_picker/issues/37)).
+* Migrate plugin Android build to `kotlin.compilerOptions` / Kotlin source sets per [Flutter built-in Kotlin guide](https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors).
+* Update example app to Android Gradle Plugin 9.0.1 and Gradle 9.1.0.
+* Raise minimum Flutter to 3.44.0 and Dart SDK to ^3.12.0.
+
 ## 0.0.12
 * Add Swift Package Manager support for iOS (alongside CocoaPods), per [Flutter SPM plugin guide](https://docs.flutter.dev/packages-and-plugins/swift-package-manager/for-plugin-authors).
 * Raise minimum Flutter to 3.41.0 and Dart SDK to ^3.11.0 for `FlutterFramework` SPM integration.
